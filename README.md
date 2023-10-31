@@ -7,7 +7,7 @@ There is a trigger input (common to all channels) plus CV and trigger outputs fo
 - a trigger is received even if the quantisation is unchanged (TRIG)
 - the quantisation of an input changes (NOTE)
 - a trigger is received _and_ the quantisation has changed (T&&N)
-- a trigger is received _or_ the quantisation has changed (T||N)
+- a trigger is received _or_ the quantisation changes (T||N)
 
 The code is intended for use in the Arduino IDE (v 2.x) using the Waveshare RP2040 Zero core. RP2040_Quantizer6.ino and MAX5715.h should both be in the sketch folder.
 
