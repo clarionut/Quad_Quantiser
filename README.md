@@ -14,3 +14,5 @@ The code is intended for use in the Arduino IDE (v 2.x) using the Waveshare RP20
 The Kicad schematic includes custom symbols and footprints for the RP2040 Zero and for the MAX5715. The PCB layout is for a board to be mounted on brackets perpendicular to the front panel, and also includes custom footprints for the RP2040, MAX5715 and the power connector. I've also included a STEP file model of the RP2040 board for use with the Kicad 3D viewer. Note that the WaveShare Rp2040 Zero board does not have a reset connection broken out - I soldered a very thin wire from the RESET pad on the main PCB to one of the pads on the RP2040 Zero's Reset switch
 
 At present the quantisation is limited to the conventional western 12-semitone scale. One obvious extension is to include less conventional scales - e.g. quarter tone or Bohlen-Pierce.
+
+This design and its associated software are released under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA) 4.0 Deed.
