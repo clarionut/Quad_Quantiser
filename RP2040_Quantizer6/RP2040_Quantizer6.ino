@@ -42,8 +42,8 @@ int oldPosition = 0;
 int newPosition = 0;
 int item = 1;
 
-uint8_t SW = 1;
-uint8_t old_SW = 1;
+uint8_t encSw = 1;
+uint8_t oldEncSw = 1;
 //uint8_t CLK_in = 0;
 //uint8_t old_CLK_in = 0;
 uint8_t newTrig = 0;
@@ -72,7 +72,7 @@ struct configStruct {
 configStruct config;
 
 int8_t sync[4] = {0}; // sync with: 0, trig; 1, note changed; 2, trig AND note; 3, trig OR note
-char syncType[][5] = {"TRIG", "NOTE", "T&&N ", "T||N "};
+char syncType[][5] = {"TRIG", "NOTE", "T&&N", "T||N"};
 int8_t oct[4] = {0}; // octave shift
 int8_t chnl = 0, mode = 0;
 
@@ -261,7 +261,7 @@ void loop1() {
     display.display();
   }
   // Process rotary encoder input
-  old_SW = SW;
+  oldEncSw = encSw;
   newPosition = myEnc.getCount();
   // Encoder has 4 steps per detent
   if (((newPosition - 3) / 4  > oldPosition / 4) || ((newPosition + 3) / 4  < oldPosition / 4)) {
@@ -302,8 +302,8 @@ void loop1() {
   item = constrain(item, 0, 15);
 
   // Process push switch input
-  SW = digitalRead(ENC_SW);
-  if (SW && !old_SW) {
+  encSw = digitalRead(ENC_SW);
+  if (encSw && !oldEncSw) {
     oledRefresh = 1;
     if (screenSave) {
       screenSave = 0;
