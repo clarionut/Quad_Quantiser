@@ -15,4 +15,4 @@ The Kicad schematic includes custom symbols and footprints for the RP2040 Zero a
 
 At present the quantisation is limited to the conventional western 12-semitone scale. One obvious extension is to include less conventional scales - e.g. quarter tone or Bohlen-Pierce.
 
-This design and its associated software are released under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA) 4.0 Deed.
+This design and its associated software are published under the Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA) 4.0 Deed.
