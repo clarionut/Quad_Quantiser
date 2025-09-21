@@ -1,4 +1,6 @@
 # Quad_Quantiser
+![Quad_QuantiserSml](https://github.com/clarionut/Quad_Quantiser/blob/main/pictures/Quad_Quantizer.jpg)
+
 The original inspiration for this project came from the [Dual Quantizer by Hagiwo](https://note.com/solder_state/n/nb8b9a2f212a2), in particular the use of an RP2040 microcontroller and the general style of the OLED display / rotary encoder user interface. There the resemblance pretty much ends.
 
 This project uses a WaveShare RP2040 Zero board as the processor, a MAX5715 12-bit 4-channel SPI DAC buffered and amplified to give a 5-octave output range on each of the four channels, plus a 24LC04 I2C EEPROM to allow the configuration to be saved. Both cores of the RP2040 are used with core 0 handling the analogue inputs, quantisation and output to the MAX5715, while core 1 handles the rotary encoder / 0.96" I2C OLED screen user interface and also the EEPROM.
