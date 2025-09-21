@@ -1,5 +1,5 @@
 # Quad_Quantiser
-![QuadQuantiserSml](https://github.com/clarionut/Quad_Quantiser/blob/main/pictures/Quad_Quantizer.jpg {size='50%'})
+![QuadQuantiserSml](https://github.com/clarionut/Quad_Quantiser/blob/main/pictures/Quad_Quantizer.jpg = 100px)
 
 The original inspiration for this project came from the [Dual Quantizer by Hagiwo](https://note.com/solder_state/n/nb8b9a2f212a2), in particular the use of an RP2040 microcontroller and the general style of the OLED display / rotary encoder user interface. There the resemblance pretty much ends.
 
